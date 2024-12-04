@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit_learn
+shap
+streamlit
+streamlit_shap
+xgboost
+matplotlib
+ipython
