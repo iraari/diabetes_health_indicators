@@ -165,8 +165,8 @@ Income_dict = {"less than \$10,000 (1)": 1, "\$10,000 to \$15,000 (2)": 2, "\$15
                "\$75,000 or more (8)": 8}
 
 #st.write(f"key for value = {Income_dict.get(Income)}")
-if st.sidebar.button('Predict'):
-    st.sidebar.write("Calculating your result...")
+#if st.sidebar.button('Predict'):
+    #st.sidebar.write("Calculating your result...")
 
 
 user_show = {'High_blood_pressure': HighBP,
@@ -206,11 +206,11 @@ df_small = pd.DataFrame([user])
 
 result = model_LR.predict_proba(df_small)[0, 1]
 
-#if st.button('Predict'):
-    #st.write("There's a {} \% chance the person has diabetes".format(round(result*100, 2)))
-
-with st.expander(("Your prediction")):
+if st.button('Predict'):
     st.write("There's a {} \% chance the person has diabetes".format(round(result*100, 2)))
+
+#with st.expander(("Your prediction")):
+    #st.write("There's a {} \% chance the person has diabetes".format(round(result*100, 2)))
 
 """
 ### Would you be interested to know why the model came to this result? 🤔
