@@ -48,7 +48,7 @@ model_LR.fit(X_train, y_train)
 # Diabetes Health Indicators
 Hello!
 
-This is an application prototype that can serve as a self-regulation and check whether a user is likely to develop diabetes. 
+This is an application prototype that can serve as a self-regulation and check whether an individual has diabetes. 
 
 It is based on a machine learning model that makes predictions based on patterns in persons's health data.
 
@@ -62,7 +62,7 @@ with st.expander(("How Machine Learning Works")):
     
     - As the model processes more examples, it notices which factors—like high blood pressure or certain age ranges—are often seen in people with diabetes. It also learns which patterns are typical in people who don’t have diabetes.
 
-    - Once it’s trained, the model can then be used with new health records. When given the details of a new person, it checks the patterns in that person’s data and compares them with the patterns it has learned. If the data aligns closely with patterns seen in people with diabetes, the model predicts "1" (meaning the person likely has diabetes). If it doesn’t match those patterns, it predicts "0" (meaning the person likely does not have diabetes).
+    - Once it’s trained, the model can then be used with new health records. When given the details of a new person, it checks the patterns in that person’s data and compares them with the patterns it has learned. If the data aligns closely with patterns seen in people with diabetes, the model predicts a number close to 1 (meaning the person likely has diabetes). If it doesn’t match those patterns, the model predicts a number close to 0 (meaning the person likely does not have diabetes).
     
     In short, a machine learning model for diabetes prediction works by learning from many examples to find patterns, then uses those patterns to make educated guesses about new cases. This doesn’t replace a doctor's expertise but can serve as a helpful tool to support decision-making.
 
@@ -85,7 +85,7 @@ HighBP_dict =  {"no": 0, "yes": 1}
 #st.write(f"key for value = {HighBP_dict.get(HighBP)}")
 
 HighChol = st.sidebar.selectbox(
-    'Is yout cholesterol high?',
+    'Is your cholesterol high?',
      ("no", "yes"))
 #'You selected: ', HighChol
 HighChol_dict =  {"no": 0, "yes": 1}
