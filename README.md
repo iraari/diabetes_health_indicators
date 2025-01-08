@@ -1,1 +1,1 @@
-This project contains the necessary materials to run the application on the [Streamlit Community Cloud](https://share.streamlit.io/). Alternatively, you can install Streamlit locally and run the script with the command _streamlit run script.py_.  
+This project contains the necessary materials to run the [application](https://diabetes-health-indicators.streamlit.app/) on the [Streamlit Community Cloud](https://share.streamlit.io/). Alternatively, you can install Streamlit locally and run the script with the command _streamlit run script.py_.  
